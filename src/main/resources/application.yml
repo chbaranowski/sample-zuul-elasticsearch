@@ -1,0 +1,12 @@
+zuul:
+  routes:
+    users:
+      path: /sp/**
+      url: http://localhost:9200/
+      
+spring:
+  data:
+    elasticsearch:
+      properties:
+        http: true
+        http.host: localhost
